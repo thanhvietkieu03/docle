@@ -10,3 +10,4 @@ class Table < ApplicationRecord
     validates :status, presence: true
     validates :capacity, presence: true, numericality: { only_integer: true, greater_than: 0 }
   end
+  
