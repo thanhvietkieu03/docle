@@ -1,12 +1,12 @@
 class Order < ApplicationRecord
     belongs_to :table
-    belongs_to :waitstaff
+    
     has_many :order_items
     has_many :items, through: :order_items
   end
   class Order < ApplicationRecord
     belongs_to :table
-    belongs_to :waitstaff
+ 
     has_many :order_items
     has_many :items, through: :order_items
   
