@@ -1,10 +1,10 @@
 class OrderItem < ApplicationRecord
     belongs_to :order
-    belongs_to :item
+ 
   end
   class OrderItem < ApplicationRecord
     belongs_to :order
-    belongs_to :item
+    
   
     validates :order_item_id, presence: true
     validates :quantity, presence: true, numericality: { only_integer: true, greater_than: 0 }
