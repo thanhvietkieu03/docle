@@ -1,4 +1,4 @@
-class CreateJoinTableTablesWaitstaffs < ActiveRecord::Migration[6.0]
+class CreateJoinTableTablesWaitstaffs < ActiveRecord::Migration[7.0]
   def change
     create_join_table :tables, :waitstaffs do |t|
       # thêm các cột bổ sung vào bảng kết hợp nếu cần
